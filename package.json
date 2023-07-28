@@ -1,26 +1,30 @@
 {
-  "name": "web-pack-v2",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "name": "pixi-matter-template",
+  "version": "0.0.1",
+  "description": "Pixi.js/Matter.js project boiler plate using TypeScript and Webpack",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server --hot"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "pixi-sound": "2.0.4",
-    "pixi.js": "4.8.2"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liamf1986/PixiMatterTemplate.git"
   },
+  "author": "Liamf1986 <liamf1986@gmail.com>",
   "devDependencies": {
-    "@types/pixi.js": "4.8.3",
-    "ts-loader": "6.0.4",
-    "typescript": "3.1.6",
-    "webpack": "4.35.0",
-    "webpack-cli": "3.3.5",
-    "webpack-dev-server": "3.7.2"
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.3",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  },
+  "dependencies": {
+    "pixi-spine": "^4.0.4",
+    "pixi.js": "^7.2.3",
+    "eventemitter3": "5.0.1",
+    "gsap": "3.12.2"
   }
 }
