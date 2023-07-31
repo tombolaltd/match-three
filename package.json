@@ -10,7 +10,6 @@
     "type": "git",
     "url": "https://github.com/liamf1986/PixiMatterTemplate.git"
   },
-  "author": "Liamf1986 <liamf1986@gmail.com>",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",

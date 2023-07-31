@@ -1,22 +1,22 @@
 // import { Spine } from 'pixi-spine';
 import { Assets, Container } from 'pixi.js'
-import { Grid } from './core/models/grid';
+// import { Grid } from './core/models/newGrid';
 
 export class Scene extends Container {
-    private viewWidth: number;
-    private viewHeight: number;
+    // private viewWidth: number;
+    // private viewHeight: number;
     // private spine!: Spine;
     private assets: any[] = [];
-    private gridWidth: number;
+    // private gridWidth: number;
 
     constructor(width: number, height: number) {
         super();
-        this.viewWidth = width;
-        this.viewHeight = height;
+        // this.viewWidth = width;
+        // this.viewHeight = height;
 
-        this.gridWidth = 0;
-        if(this.viewWidth <= this.height){this.gridWidth = this.viewWidth;}
-        else {this.gridWidth = this.viewHeight}
+        // this.gridWidth = 0;
+        // if(this.viewWidth <= this.height){this.gridWidth = this.viewWidth;}
+        // else {this.gridWidth = this.viewHeight}
 
     }
 
@@ -44,9 +44,9 @@ export class Scene extends Container {
         //discern portrait/landscape
 
 
-        const newGrid = new Grid(5, this.gridWidth);
-        //newGrid.position.set(this.viewWidth/2, this.viewHeight/2)
-        this.addChild(newGrid);
+        // const newGrid = new Grid(5, this.gridWidth);
+        // //newGrid.position.set(this.viewWidth/2, this.viewHeight/2)
+        // this.addChild(newGrid);
     }
 
     public update(delta: number): void {
